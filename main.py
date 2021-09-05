@@ -13,4 +13,3 @@ while x!=1:
     r = str(count).zfill(4)
     print("[Step : ",r,"][x :",'{:.0f}'.format(x).rjust(10),"]")
     time.sleep(0.05)
-    
