@@ -23,3 +23,4 @@ for i in range(10):
     l.append(time.perf_counter() - start)
 
 print(l)
+input()
