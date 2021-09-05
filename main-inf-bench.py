@@ -1,7 +1,7 @@
 import time
 
-
 start = time.perf_counter()
+l= list()
 
 def calc(x,tgt,count,):
     while x!=1:
@@ -14,10 +14,12 @@ def calc(x,tgt,count,):
         #time.sleep(0.05)
     return count
 
-for tgt in range(1, 1000):
-    log = calc(tgt,tgt,0)
-    #print(log)
-    tgt += 1
+for i in range(10):
+    start = time.perf_counter()
+    for tgt in range(1, 1000):
+        log = calc(tgt,tgt,0)
+        #print(log)
+        tgt += 1
+    l.append(time.perf_counter() - start)
 
-
-print(time.perf_counter() - start)
+print(l)
