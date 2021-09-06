@@ -14,10 +14,11 @@ def calc(x,tgt,count,):
         #time.sleep(0.05)
     return count
 
-for tgt in range(1, 1000):
+for tgt in range(1, 5000):
     log = calc(tgt,tgt,0)
     #print(log)
     tgt += 1
 
 
 print(time.perf_counter() - start)
+input()
