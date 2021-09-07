@@ -18,7 +18,7 @@ def calc(firstnum):
 
 if __name__ == "__main__":
     counttime = time.perf_counter()
-    for i in range(1,100):
+    for i in range(1,5000):
         print(i)
         calc(i)
     print(time.perf_counter() - counttime)
